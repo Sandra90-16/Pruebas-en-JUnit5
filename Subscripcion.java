@@ -18,7 +18,19 @@ public class Subscripcion {
 	 periodo = n ;
 	 
 	 }
-	 /**
+	 public int getPrecio() {
+		return precio;
+	}
+	public void setPrecio(int precio) {
+		this.precio = precio;
+	}
+	public int getPeriodo() {
+		return periodo;
+	}
+	public void setPeriodo(int periodo) {
+		this.periodo = periodo;
+	}
+	/**
 	 * Calcula el precio de la subscripción mensual en euros,
 	 * redondeándolo por arriba al céntimo más cercano.
 	 *
@@ -39,6 +51,6 @@ public class Subscripcion {
 	 * Este método cancela la subscripción.
 	 */
 	 public void cancel() {
-	 periodo = 0 ;
+		 periodo = 0 ;
 	 }
 }
